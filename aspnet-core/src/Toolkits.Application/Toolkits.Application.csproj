@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Toolkits</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Toolkits.Domain\Toolkits.Domain.csproj" />
+    <ProjectReference Include="..\Toolkits.Application.Contracts\Toolkits.Application.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="iTextSharp" Version="5.5.13.1" />
+    <PackageReference Include="OpenCvSharp4" Version="4.9.0.20240103" />
+    <PackageReference Include="OpenCvSharp4.runtime.win" Version="4.9.0.20240103" />
+    <PackageReference Include="Sdcb.PaddleInference" Version="2.5.0.1" />
+    <PackageReference Include="Sdcb.PaddleInference.runtime.win64.mkl" Version="2.5.1" />
+    <PackageReference Include="Sdcb.PaddleOCR" Version="2.7.0.1" />
+    <PackageReference Include="Sdcb.PaddleOCR.KnownModels" Version="2.3.0" />
+    <PackageReference Include="Sdcb.PaddleOCR.Models.Local" Version="2.7.0" />
+    <PackageReference Include="Spire.PDF" Version="6.5.15" />
+    <PackageReference Include="Volo.Abp.Account.Application" Version="8.1.1" />
+    <PackageReference Include="Volo.Abp.Identity.Application" Version="8.1.1" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.Application" Version="8.1.1" />
+    <PackageReference Include="Volo.Abp.TenantManagement.Application" Version="8.1.1" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.Application" Version="8.1.1" />
+    <PackageReference Include="Volo.Abp.SettingManagement.Application" Version="8.1.1" />
+    <PackageReference Include="ZXing.Net" Version="0.16.6" />
+  </ItemGroup>
+
+</Project>
